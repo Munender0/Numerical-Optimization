@@ -14,13 +14,10 @@ def line_search_method(initial_x, learning_rate, epsilon):
     
     return x
 
-# Set initial values
 initial_x = 0.0
 learning_rate = 0.1
 epsilon = 1e-6
 
-# Find optimal solution
 optimal_x = line_search_method(initial_x, learning_rate, epsilon)
 
-# Print result
 print(f"The optimal solution is x = {optimal_x}, f(x) = {objective_function(optimal_x)}")
